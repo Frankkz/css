@@ -2161,7 +2161,7 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="
     border-spacing: 0;
 }
 div.film-info {
-    background: #262626;
+    background: #262626!important;
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child {
     width: 850px;
