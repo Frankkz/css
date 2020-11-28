@@ -2153,7 +2153,7 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > script:firs
     border-spacing: 0;
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="width: 900px; text-align: left"] > div[style*="background: #bccad6"]:first-child {
-    background-color: #36363a !important;
+    background-color: #36363a;
     border: 1px solid #000;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
@@ -2161,7 +2161,7 @@ body > table.menu + table.main > tbody > tr > td.bottom:last-child > div[style="
     border-spacing: 0;
 }
 div.film-info {
-    background: #262626!important;
+    background-color: #262626;
 }
 body > table.menu + table.main > tbody > tr > td.bottom:last-child > table.main > tbody > tr > td.embedded > table[cellpadding="10"]:first-child {
     width: 850px;
