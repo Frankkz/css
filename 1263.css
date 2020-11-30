@@ -22,6 +22,8 @@
     --darkBlueLight2: #1a2230;
     --darkBlueLight3: #112c3d;
     --white: #eeeeee;
+    --searchDropdown: #1d3549;
+    --selected:  #274863;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -43,7 +45,7 @@ div.footer {
 body {
     background: var(--darkBlueMain);
     color: var(--white);
-    margin: 80px 0 0;
+    margin: 102px 0 0;
     padding: 10px 20px 20px;
 }
 body > table.main {
@@ -107,9 +109,9 @@ textarea,
 button,
 .button {
     outline: none;
-    border: 1px solid #22282b;
-    background-color: #435156;
-    color: #c6cfd2;
+    border: 1px solid #032333;
+    background-color: var(--searchDropdown);
+    color: #eeeeee;
     -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
     -o-transition: background-color 0.2s ease-out, color 0.2s ease-out;
@@ -122,7 +124,7 @@ button:focus,
 .button:focus {
     border: 1px solid #22282b;
     background-color: #c6cfd2;
-    color: #435156;
+    color: var(--searchDropdown);
 }
 input[disabled] {
     opacity: 0.5;
@@ -136,7 +138,7 @@ input[type="submit"],
 input[type="reset"] {
     outline: none;
     border: 1px solid #22282b;
-    background-color: #435156;
+    background-color: var(--searchDropdown);
     color: #c6cfd2;
     -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
@@ -155,7 +157,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus {
     border: 1px solid #22282b;
     background-color: #c6cfd2;
-    color: #435156;
+    color: var(--searchDropdown);
 }
 button:active,
 button[type="button"]:active,
@@ -189,7 +191,7 @@ input[type="reset"]:focus,
 input[type="reset"]:active {
     border: 1px solid #22282b;
     background-color: #c6cfd2;
-    color: #435156;
+    color: var(--searchDropdown);
 }
 ::-webkit-input-placeholder {
     color: #c6cfd2;
@@ -372,9 +374,9 @@ body > table:first-of-type {
     top: 0;
     left: 0;
     z-index: 2;
-    height: 60px;
+    height: 70px;
     margin: 0 !important;
-    background-color: var(--darkBlueMain);
+    background-color: var(--darkBlueDark);
 }
 body > table:first-of-type #sitesearch {
     text-align: center;
@@ -410,7 +412,7 @@ body > table:first-of-type .embedded .curuser-stats:nth-of-type(2) {
 }
 body .menu {
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 0;
     z-index: 2;
     margin: 0;
@@ -527,7 +529,7 @@ p.sub > a[name]:target {
 .notification,
 .popup {
     border-radius: 3px;
-    background-color: rgba(67, 81, 86, 0.95);
+    background-color: rgba(17, 78, 100, 0.95);
     color: #c6cfd2;
     padding: 4px 8px;
 }
@@ -575,7 +577,7 @@ p.sub > a[name]:target {
 }
 .autocomplete-suggestions {
     background: #c6cfd2;
-    color: #435156;
+    color: var(--searchDropdown);
     border: 1px solid #22282b;
     box-shadow: none;
 }
@@ -583,9 +585,15 @@ p.sub > a[name]:target {
     background: #e2e7e9;
 }
 .menu {
-    border: none;
-    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.5);
+    border-collapse: separate;
+    padding: 5px 0 !important;
+    /* border-top: 5px solid var(--darkBlueDark);
+    border-bottom: 5px solid var(--darkBlueDark); */
+    /* box-shadow: var(--darkBlueMain); */
+    box-shadow: 5px 3px 4px 1px rgba(0, 0, 0, 0.5);
     background: var(--darkBlueLight);
+    /* margin: 4em;
+    padding:1em; */
 }
 #menusides,
 td.menunavigation,
@@ -602,9 +610,9 @@ td.menunavigation_new:hover {
 td.menunavigation a.normal,
 td.menunavigation_new a.normal {
     border: none;
-    border-radius: 3px;
+    border-radius: 0px;
     width: 100%;
-    color: #a0a9b1;
+    color: #dddddd;
     box-shadow: none;
     -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
@@ -640,7 +648,7 @@ td.menunavigation_new a.normal::before {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 3px;
+    border-radius: 0px;
     opacity: 0.75;
     box-shadow: none;
     -webkit-animation: menuflash 1s infinite alternate;
@@ -687,7 +695,7 @@ td#sidebar-container {
     position: fixed;
     display: block;
     z-index: 1;
-    top: 0;
+    top: 15;
     left: 0;
     padding: 0 !important;
     background: transparent;
@@ -1052,7 +1060,7 @@ td.bottom > table[width="500"]:first-of-type td a:active {
 }
 #torrent-list button,
 #torrent-list button.tvdb_button {
-    background-color: #435156;
+    background-color: var(--searchDropdown);
     color: #c6cfd2;
     border: none;
     border-radius: 3px;
@@ -1069,7 +1077,7 @@ td.bottom > table[width="500"]:first-of-type td a:active {
 #torrent-list button.tvdb_button:focus,
 #torrent-list button.tvdb_button:active {
     background-color: #c6cfd2;
-    color: #435156;
+    color: var(--searchDropdown);
     text-decoration: none;
 }
 #torrent-list button:active,
@@ -1317,7 +1325,7 @@ b .pagerel {
     border-spacing: 0;
 }
 .overlay-popupui > .button {
-    background-color: #435156;
+    background-color: var(--searchDropdown);
     color: #c6cfd2;
     border: none;
     border-radius: 3px;
@@ -1334,7 +1342,7 @@ b .pagerel {
 .overlay-popupui > .button:focus,
 .overlay-popupui > .button:active {
     background-color: #c6cfd2;
-    color: #435156;
+    color: var(--searchDropdown);
     text-decoration: none;
 }
 .overlay-popupui > .button:active {
@@ -1449,7 +1457,7 @@ html .torrent .item-body > .comment {
     margin-left: 45px;
 }
 html .list-links > a {
-    background-color: #435156;
+    background-color: var(--searchDropdown);
     color: #c6cfd2;
     border: none;
     border-radius: 3px;
@@ -1466,7 +1474,7 @@ html .list-links > a:hover,
 html .list-links > a:focus,
 html .list-links > a:active {
     background-color: #c6cfd2;
-    color: #435156;
+    color: var(--searchDropdown);
     text-decoration: none;
 }
 html .list-links > a:active {
