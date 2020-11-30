@@ -713,7 +713,7 @@ td#sidebar-container {
 td#sidebar-container .main {
     position: relative;
     background-color: var(--darkBlueDark);
-    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.5); */
     border: none;
     border-radius: 0 5px 5px 0;
     width: 185px;
@@ -851,7 +851,9 @@ td#sidebar-container form > select {
     width: 150px;
 }
 td#sidebar-container .embedded {
-    padding: 0;
+    
+    border: solid var(--darkBlueDark) 1px;
+    /* padding: 0; */
 }
 td#sidebar-container .embedded table,
 td#sidebar-container .embedded h2 {
@@ -862,8 +864,8 @@ td#sidebar-container .embedded h2 {
 td#sidebar-container .embedded table {
     margin-top: 0px;
     margin-bottom: 0px;
-    border-radius: 0 0 5px 0;
-    background-color: var(--darkBlueLight2);
+    border-radius: 0 0 0px 0;
+    background-color: var(--darkBlueDark);
 }
 td#sidebar-container .embedded table:last-of-type {
     margin-bottom: 10px;
