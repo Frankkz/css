@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     DarkRevamp
- * Version:        0.19
+ * Version:        0.20
  * Last Updated:   1 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -619,12 +619,11 @@ td.menunavigation:hover,
 td.menunavigation_new:hover {
 background: none; 
 border: 2px solid transparent; 
-
 }
 
 td.menunavigation a.normal,
 td.menunavigation_new a.normal {
-    padding: 5 0 5 0;
+    padding: 5 2 5 2 !important;
     width: 100%;
     color: var(--MenuFontColor);
     box-shadow: none;
@@ -679,12 +678,11 @@ td.menunavigation_new a.normal::before {
     left: 0;
     right: 0;
     height: 2px;
-}
-    /* background-color: var(--DarkestColor);
+    background-color: var(--DarkestColor);
     transform-origin: center;
     transform: scaleX(1);
     transition: transform .4s ease;*/
-    /*-webkit-animation: menuflash 1600ms infinite alternate;
+    -webkit-animation: menuflash 1600ms infinite alternate;
     -moz-animation: menuflash 1600ms infinite alternate;
     -o-animation: menuflash 1600ms infinite alternate;
     animation: menuflash 1600ms infinite alternate;
@@ -709,45 +707,36 @@ td.menunavigation_new a.normal::before {
     100% {
         background-color: #4281da;
     }
-}*/
+}
+
 td.menunavigation a:hover,
 td.menunavigation a:focus,
 td.menunavigation_new a:hover,
 td.menunavigation_new a:focus {
-    /* font-weight: bold;
-    font-size: 13px; */
-    /* border: none; */
     text-decoration: none;
     content: ""; 
     background-color: var(--TableCellColor);
-    box-shadow: 5 5 5 5;
-    /* transform-origin: center; */
-    /* transform: scaleX(1); */
-    /* transition: transform .4s ease; */
 }
+
 td.menunavigation a:active,
 td.menunavigation_new a:active {
     text-decoration: none;
 }
+
 td#sidebar-container { 
     position: fixed;
     display: block;
-    /* z-index: 1; */
     top: 15;
-    /* left: 0; */
     padding: 0 !important;
-    /* background: transparent;
-    border: none; */
     height: auto;
     max-height: 100%;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
     -webkit-transition: width 0.15s ease;
     -moz-transition: width 0.15s ease;
     -o-transition: width 0.15s ease;
     transition: width 0.15s ease;
     width: 20px;
 }
+
 td#sidebar-container .main {
     position: relative;
     background-color: var(--DarkestColor);
@@ -766,6 +755,7 @@ td#sidebar-container .main::before {
     border-radius: 0 5px 5px 0;
     background-color: var(--DarkestColor);
 } 
+
 td#sidebar-container:hover {
     -webkit-transition: none;
     -moz-transition: none;
