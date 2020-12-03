@@ -1,6 +1,6 @@
 /*!
  * Theme Name:     DarkRevamp
- * Version:        0.20.1
+ * Version:        0.20
  * Last Updated:   1 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
@@ -241,6 +241,11 @@ a.catlink {
     -o-transition: color 0.2s linear;
     transition: color 0.2s linear;
 }
+a:link,
+   a:visited {
+    text-decoration:none;
+    color:#000
+   }
 a:hover,
 a:focus,
 a:active,
