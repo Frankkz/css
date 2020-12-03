@@ -1,7 +1,7 @@
 /*!
  * Theme Name:     DarkRevamp
- * Version:        0.21.1
- * Last Updated:   3 December 2020
+ * Version:        0.20.1
+ * Last Updated:   1 December 2020
  * Notes:          Ensure stylesheet is set to (default) in profile settings when in use
  */
 
@@ -26,7 +26,7 @@
     --selected:  #274863;
 }*/
 :root {
-    --MainColor: #0d2130;
+    --MainColor: #072336;
     --UsernameColor: #ffd56b;
     --TableCellColor: #072336;
     --DarkestColor: #041824; /* Header, Menu, Sidebar Main, Table Main */
